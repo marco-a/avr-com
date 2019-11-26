@@ -8,7 +8,7 @@
 #define BAUDRATE 460800
 
 void setup() {
-	Serial.begin(460800);
+	Serial.begin(BAUDRATE);
 	pinMode(DATA_PIN, INPUT);
 	pinMode(SYNC_PIN, INPUT);
 }
