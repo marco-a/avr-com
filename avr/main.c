@@ -1,10 +1,14 @@
+#include <avr/io.h>
+#include <util/delay.h>
+#include <stdint.h>
+#include <string.h>
+#include <stdbool.h>
 #include "COM.h"
 
 int main() {
 	COM_init();
 
-	while (1) {
-		COM_sendString("Hello, World");
-		COM_sendString("This is a test.");
+	while (true) {
+		COM_sendString("Hallo, Welt\n");
 	}
 }
